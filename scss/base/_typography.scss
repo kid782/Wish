@@ -1,1 +1,31 @@
+$nav-item-color: $white;
+$hero-title-color: $orange-gold;
 
+html {
+  font-family: "Open Sans";
+}
+
+.header__link,
+.footer {
+  color: $nav-item-color;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.hero__create-wish-title {
+  color: $hero-title-color;
+  font-family: $font-title;
+  font-size: 5rem;
+}
+
+.main__title {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  border-bottom: 20px solid $black-gray;
+  border-radius: 10px;
+  color: $black-gray;
+  font-size: 5rem;
+  text-align: center;
+}

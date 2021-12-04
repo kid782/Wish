@@ -5,13 +5,14 @@ const prefix = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const terser = require("gulp-terser");
 const browserSync = require("browser-sync").create();
+const gulpStylelint = require("gulp-stylelint");
 
 //create functions
 
 //scss
 function compilescss() {
   return gulp
-    .src("scss/main.scss")
+    .src("scss/**/*.scss")
     .pipe(sass())
     .pipe(prefix())
     .pipe(minify())

@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+
+  @include flex-center;
+
+  padding: 1.5em 2em;
+  background: $black-gray;
+  color: $white;
+}

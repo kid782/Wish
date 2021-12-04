@@ -1,0 +1,58 @@
+.hero {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  min-height: 900px;
+  background: url("/images/hero-background-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main__tutorial {
+  padding: 5rem 0;
+}
+
+.main__tutorial-step {
+  display: grid;
+  grid-column-gap: 2.5em;
+  grid-template-areas:
+    "tutorial-title tutorial-image"
+    "tutorial-text tutorial-image";
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto 4em;
+  padding: 4em;
+  border-bottom: 1.5em solid $black-gray;
+  border-radius: 10px;
+  color: $black-gray;
+  line-height: 1.7;
+}
+
+.main__tutorial-title {
+  grid-area: tutorial-title;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.main__tutorial-text {
+  grid-area: tutorial-text;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.header__tutorial-image-container {
+  grid-area: tutorial-image;
+}
+
+.make-a-wish {
+  display: flex;
+  column-gap: 1em;
+  @include flex-center;
+
+  margin: 4em;
+  font-size: 2rem;
+  font-weight: bold;
+}

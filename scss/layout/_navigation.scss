@@ -1,0 +1,15 @@
+.header__nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.header__list-right {
+  display: flex;
+  grid-column: 3 / 4;
+
+  @include flex-center;
+
+  gap: 4em;
+}
